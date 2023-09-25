@@ -1,113 +1,146 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+    <main className="flex min-h-screen flex-col justify-between p-12">
+      <h1 className={`mb-5 text-5xl font-semibold`}>
+        MyWords - Políticas de pricidad
+      </h1>
+      <h2 className={`mb-3 text-3xl font-semibold`}>
+        Identificación del responsable
+      </h2>
+      <p className={`mb-3`}>
+        De acuerdo con lo establecido en la Ley de Servicios de la Sociedad de
+        la Información, le comunicamos que el aplicativo es propiedad de Miguel
+        Ángel Núñez-Romero Olmo con domicilio en &quot;Avenida Ronda del Estero,
+        10, San Fernando (11100), Cádiz&quot;
+      </p>
+      <h2 className={`mb-3 text-3xl font-semibold`}>Compromiso del usuario</h2>
+      <p className={`mb-3`}>
+        El usuario se compromete a utilizar el aplicativo conforme a la Ley,
+        moral, buenas costumbres y orden público, evitando cualquier actuación
+        ilícita o lesiva de derechos e intereses de terceros. El usuario
+        responderá de los daños y perjuicios de cualquier tipo derivados de su
+        incumplimiento de la ley o de las condiciones generales de uso recogidas
+        en este documento
+      </p>
+      <h2 className={`mb-3 text-3xl font-semibold`}>
+        Carácter meramente informativo y divulgativo del sitio
+      </h2>
+      <p className={`mb-3`}>
+        El contenido y la información de este sitio web es meramente de carácter
+        informativo y divulgativo.
+      </p>
+      <h2 className={`mb-3 text-3xl font-semibold`}>
+        Protección de datos de carácter personal.
+      </h2>
+      <p className={`mb-3`}>
+        De conformidad con el Reglamento (UE) 2016/679, de 27 de abril de 2016,
+        relativo a la protección de las personas físicas en lo que respecta al
+        tratamiento de datos personales ya la libre circulación de estos datos y
+        subsidiariamente en lo no regulado, el Real Decreto 1720/2007, de 21 de
+        diciembre, por el que se aprueba el Reglamento de desarrollo de la Ley
+        Orgánica 15/1999, de 13 de diciembre de Protección de Datos de Carácter
+        Personal, el autor de la app informa a los Usuarios:
+      </p>
+      <h3 className={`mb-3 text-xl font-semibold`}>
+        Información básica sobre Protección de Datos
+      </h3>
+      <p className={`mb-3`}>
+        <ul>
+          <li>
+            <span className={`font-semibold`}>Responsable:</span> Autor de la
+            app
+          </li>
+          <li>
+            <span className={`font-semibold`}>Datos:</span> Identificadores de
+            usuario de los distintos proveedores de identidad. Actualmente
+            Google.
+          </li>
+          <li>
+            <span className={`font-semibold`}>Finalidad:</span> Identificación
+            del mediante los distintos proveedores de identidad. No se accederá
+            ni almacenará información personal del mismo.
+          </li>
+        </ul>
+      </p>
+      <h3 className={`mb-3 text-xl font-semibold`}>
+        ¿Qué datos de carácter personal se almacenarán?
+      </h3>
+      <p className={`mb-3`}>
+        El único dato de carácter personal almacenado en el aplicativo será el
+        identificador de usuario proporcionado por los distintos proveedores de
+        identidad utilizados en el aplicativo (Google), para poder preteger
+        resto de la información de usuarios externos.
+      </p>
+      <h3 className={`mb-3 text-xl font-semibold`}>
+        ¿Con qué finalidad tratamos sus datos personales?
+      </h3>
+      <p className={`mb-3`}>
+        Dentificación del mediante los distintos proveedores de identidad. No se
+        accederá ni almacenará información personal del mismo.
+      </p>
+      <h3 className={`mb-3 text-xl font-semibold`}>
+        ¿A qué destinatarios se comunicarán los datos?
+      </h3>
+      <p className={`mb-3`}>
+        No se cederán los datos a terceros, salvo obligación legal.
+      </p>
+      <h3 className={`mb-3 text-xl font-semibold`}>
+        ¿Qué medidas de seguridad tiene implantadas la empresa?
+      </h3>
+      <p className={`mb-3`}>
+        Los datos almacenados en el aplicativo por el usuario solo podrán ser
+        recuperados, editados y eliminados por él mismo, haciendo uso del
+        aplicativo mediante el identificador obtenido por el proveedor de
+        identidad.
+      </p>
+      <h3 className={`mb-3 text-xl font-semibold`}>
+        ¿Durante cuánto tiempo conservamos los datos?
+      </h3>
+      <p className={`mb-3`}>
+        El identificador de usuario se conservará mientras el interesado no
+        solicite su supresión.
+      </p>
+      <h2 className={`mb-3 text-3xl font-semibold`}>
+        Exención de responsabilidad por las declaraciones y conductas de los
+        usuarios
+      </h2>
+      <p className={`mb-3`}>
+        El autor no asume ninguna responsabilidad en relación con los contenidos
+        y la información suministrada por los usuarios del aplicativo. No se
+        hace responsable de las posibles reclamaciones derivadas de las
+        afirmaciones o de la conducta de los usuarios en el marco de este
+        aplicativo. En caso de que cualquier titular de derechos considere que
+        alguno de los contenidos del aplicativo pueda constituir violación de
+        derechos de propiedad intelectual o industrial, o infracción de
+        cualquier derecho o interés legítimo, puede notificarlo al autor a
+        través de mignunolm@gmail.com indicando su nombre, dirección, teléfono y
+        correo electrónico, la titularidad del derecho o interés legítimo
+        supuestamente infringido, así como la identificación y localización
+        concreta (dentro del sitio web) del contenido supuestamente infractor.
+      </p>
+      <p className={`mb-3`}>
+        El uso de este aplicativo y de la información contenida en el mismo,
+        supone el conocimiento y la aceptación de las condiciones generales de
+        uso aquí recogidas.
+      </p>
+      <p className={`mb-3`}>
+        El autor se reserva el derecho a modificar y/o actualizar los términos y
+        condiciones establecidos en esta Web así como sus contenidos, de manera
+        que la vigencia temporal de estas condiciones quedará limitada al tiempo
+        de su exposición. Cualquier controversia o reclamación procedente o
+        relacionada con estas condiciones de uso será regida por la Ley
+        Española. Si alguna de las estipulaciones contendidas en estas
+        condiciones de uso es declarada ilegal, nula o declarada inaplicable por
+        decisión judicial, el resto de las estipulaciones seguirán en pleno
+        vigor y efecto.
+      </p>
+      <h2 className={`mb-3 text-3xl font-semibold`}>
+        Condiciones de uso de esta App
+      </h2>
+      <p className={`mb-3`}>
+        El acceso a esta App implica la adquisición de la condición de usuario y
+        la aceptación de las condiciones de la misma.
+      </p>
     </main>
-  )
+  );
 }
