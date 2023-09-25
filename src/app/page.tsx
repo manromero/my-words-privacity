@@ -100,9 +100,12 @@ export default function Home() {
         El identificador de usuario se conservará mientras el interesado no
         solicite su supresión.
       </p>
+      <h3 className={`mb-3 text-xl font-semibold`}>
+        Eliminación de identificador de usuario
+      </h3>
       <h2 className={`mb-3 text-3xl font-semibold`}>
-        Exención de responsabilidad por las declaraciones y conductas de los
-        usuarios
+        Para eliminar el identificador de usuario, así como todos los datos del
+        mismo, escribir un correo a &quot;mignunolm@gmail.com&quot;
       </h2>
       <p className={`mb-3`}>
         El autor no asume ninguna responsabilidad en relación con los contenidos
